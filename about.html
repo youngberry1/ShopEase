@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ShopEase</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+                <a href="signin.html" class="nav-link">Sign In</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="dark-mode-toggle" id="dark-mode-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1>About ShopEase</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://picsum.photos/600/400?random=1" alt="Our Team">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015, ShopEase began with a simple mission: to make quality products accessible to
+                        everyone. What started as a small online store has now grown into a trusted platform for
+                        thousands of customers worldwide.</p>
+
+                    <h2>Our Mission</h2>
+                    <p>We're dedicated to providing exceptional shopping experiences through curated products,
+                        competitive pricing, and outstanding customer service. Our team carefully selects each item to
+                        ensure it meets our quality standards.</p>
+
+                    <h2>Why Choose Us?</h2>
+                    <ul>
+                        <li>Quality assurance on all products</li>
+                        <li>Fast and reliable shipping</li>
+                        <li>Easy returns policy</li>
+                        <li>24/7 customer support</li>
+                        <li>Secure payment processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://picsum.photos/200/200?random=2" alt="Sarah Johnson">
+                    <h3>Sarah Johnson</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://picsum.photos/200/200?random=3" alt="Michael Chen">
+                    <h3>Michael Chen</h3>
+                    <p>Head of Operations</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://picsum.photos/200/200?random=4" alt="Emily Rodriguez">
+                    <h3>Emily Rodriguez</h3>
+                    <p>Customer Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="link-item">
+            <a href="shop.html">
+                <div class="link-icon">🛍️</div>
+                <h3>Shop All</h3>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="index.html">
+                <div class="link-icon">🏠</div>
+                <h3>Home</h3>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="contact.html">
+                <div class="link-icon">📧</div>
+                <h3>Contact</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShopEase</h3>
+                <p>Your trusted online shopping destination</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/cart.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
+</body>
+
+</html>

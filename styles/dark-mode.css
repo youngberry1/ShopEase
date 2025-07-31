@@ -1,0 +1,94 @@
+/* Dark Mode Styles */
+[data-theme='dark'] {
+   --text-color: #e0e0e0;
+   --bg-color: #121212;
+   --card-bg: #1e1e1e;
+   --border-color: #333;
+   --secondary-color: #2c3e50;
+}
+
+[data-theme='dark'] body {
+   background-color: var(--bg-color);
+   color: var(--text-color);
+}
+
+[data-theme='dark'] .navbar {
+   background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .nav-link {
+   color: var(--text-color);
+}
+
+[data-theme='dark'] .nav-link:hover {
+   color: var(--primary-color);
+}
+
+[data-theme='dark'] .hero {
+   background: linear-gradient(135deg, #1a5276, #5d2d91);
+}
+
+[data-theme='dark'] .feature {
+   background-color: var(--card-bg);
+}
+
+[data-theme='dark'] .quick-links {
+   background-color: var(--card-bg);
+}
+
+[data-theme='dark'] .link-item {
+   background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .product-card {
+   background-color: var(--card-bg);
+}
+
+[data-theme='dark'] .product-card:hover {
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .cart-item {
+   background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .summary-box {
+   background-color: var(--card-bg);
+}
+
+[data-theme='dark'] .checkout-form {
+   background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .contact-form {
+   background-color: var(--card-bg);
+}
+
+[data-theme='dark'] .team-member {
+   background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .form-group input,
+[data-theme='dark'] .form-group select,
+[data-theme='dark'] .form-group textarea {
+   background-color: var(--card-bg);
+   color: var(--text-color);
+   border-color: var(--border-color);
+}
+
+[data-theme='dark'] .thank-you-content {
+   background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .order-details {
+   background-color: var(--card-bg);
+}
+
+[data-theme='dark'] .review {
+   background-color: var(--bg-color);
+}
+
+/* Dark mode toggle button */
+[data-theme='dark'] .dark-mode-toggle {
+   color: #ffd700;
+}

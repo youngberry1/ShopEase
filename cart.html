@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEase</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+                <a href="signin.html" class="nav-link">Sign In</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="dark-mode-toggle" id="dark-mode-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+
+            <div id="cart-container">
+                <!-- Cart items will be loaded here -->
+                <div class="empty-cart">
+                    <h2>Your cart is empty</h2>
+                    <p>Looks like you haven't added anything to your cart yet</p>
+                    <a href="shop.html" class="continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-box">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal-amount">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span>$5.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span id="tax-amount">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total-amount">$0.00</span>
+                    </div>
+                    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="link-item">
+            <a href="shop.html">
+                <div class="link-icon">🛍️</div>
+                <h3>Continue Shopping</h3>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="checkout.html">
+                <div class="link-icon">💳</div>
+                <h3>Checkout</h3>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="index.html">
+                <div class="link-icon">🏠</div>
+                <h3>Home</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShopEase</h3>
+                <p>Your trusted online shopping destination</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/cart.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
+</body>
+
+</html>

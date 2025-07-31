@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ShopEase</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+                <a href="signin.html" class="nav-link">Sign In</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="dark-mode-toggle" id="dark-mode-toggle">🌙</button>
+        </div>
+    </nav>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>support@shopease.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🏢</div>
+                            <div>
+                                <h3>Office</h3>
+                                <p>123 Commerce Street<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <img src="https://picsum.photos/600/300?random=301" alt="Location Map">
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="link-item">
+            <a href="index.html">
+                <div class="link-icon">🏠</div>
+                <h3>Home</h3>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="shop.html">
+                <div class="link-icon">🛍️</div>
+                <h3>Shop Now</h3>
+            </a>
+        </div>
+        <div class="link-item">
+            <a href="about.html">
+                <div class="link-icon">📖</div>
+                <h3>About Us</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShopEase</h3>
+                <p>Your trusted online shopping destination</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/cart.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
+</body>
+
+</html>
